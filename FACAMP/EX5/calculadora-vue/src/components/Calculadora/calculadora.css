@@ -1,0 +1,47 @@
+.calculadora {
+  margin: 0 auto;
+  width: 400px;
+  font-size: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(60px, auto);
+}
+.display {
+  grid-column: 1 / 5;
+  background-color: #0c0c0c;
+  color: white;
+}
+.zero {
+  grid-column: 2;
+}
+.botao {
+  cursor: pointer;
+  background-color: #f2f2f2;
+  border: 1px solid #131718;
+  color: black;
+}
+.btnLimpar {
+  grid-column: 1 / 5;
+}
+.operadores {
+  background-color: orange;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 50% 70%;
+}
+.mais {
+  background-image: url(imagem/mais.png);
+}
+.igual {
+  background-image: url(imagem/igual.png);
+}
+.menos {
+  background-image: url(imagem/menos.png);
+}
+.multiplicador {
+  background-image: url(imagem/multiplicador.png);
+}
+.dividir {
+  background-image: url(imagem/dividir.png);
+}

@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: Arial;
+    color: blue;
+    margin-top: 30px;
+    text-align: center;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial;
+    font-size: 1em;
+    color: blue;
+    font-weight: bold;
+    line-height: 180%;
+}
+
+fieldset {
+    border: 0;
+}
+
+/*borda arredondada*/
+input,
+select,
+textarea,
+button {
+    border-radius: 5px;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    color: black;
+}
+
+fieldset.groupo.campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+
+.botao {
+    font-size: 25x;
+    width: 150px;
+    border: 2px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    padding: 0.2em 0.6em;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}

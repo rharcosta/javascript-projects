@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 4</title>
+    <link rel="stylesheet" type="text/css" href="design.css" media="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<style>
+    .azul {
+        color: blue;
+        font-weight: bold;
+    }
+
+    .rosa {
+        color: darkmagenta;
+        font-weight: bold;
+    }
+
+    h1 {
+        color: green;
+        text-align: left;
+    }
+
+    .botao {
+        font-weight: bold;
+        font-size: 1em;
+    }
+</style>
+
+<body>
+    <h1>Cadastro de pessoas </h1>
+    <form id="form" action="" method="post">
+        <div>
+            <table>
+                <tr>
+                    <td class="rosa"> Nome completo: </td>
+                    <td><input type="text" name="nome" id="nome" size="30" required></td>
+                </tr>
+                <tr>
+                    <td class="rosa"> E-mail: </td>
+                    <td><input type="email" name="email" id="email" size="30" required></td>
+                </tr>
+                <tr>
+                    <td class="rosa"> Nascimento: </td>
+                    <td><input type="date" name="nascimento" size="15" required></td>
+                </tr>
+                <tr>
+                    <td class="azul"> Curso de graduação: </td>
+                    <td><select name="cursos">
+                            <option value="computacao">Engenharia de Computação</option>
+                            <option value="esportes">Engenharia de Mecânica</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="azul"> Completo? </td>
+                    <td>
+                        <input type="radio" name="sim" value="sim" checked><label> Sim </label>
+                        <input type="radio" name="nao" value="nao"><label> Não </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="azul"> Habilidades: </td>
+                    <td>
+                        <input type="checkbox" name="leitura" id="leitura" value="leitura"><label> Boa leitura
+                        </label><br>
+                        <input type="checkbox" name="ingles" id="ingles" value="ingles"><label> Inglês fluente
+                        </label><br>
+                        <input type="checkbox" name="logico" id="logico" value="logico"><label> Raciocínio lógico
+                        </label><br>
+                        <input type="checkbox" name="matematica" id="matematica" value="matematica"><label> Gosta de
+                            matemática
+                        </label>
+                    </td>
+                </tr>
+                <td><input class="botao" type="button" id="submit" name="Enviar" value="Enviar"></td>
+                <td><input class="botao" type="button" id="btnLimpar" name="btnLimpar" value="Limpar"></td>
+            </table>
+        </div>
+
+
+    </form>
+</body>
+
+</html>

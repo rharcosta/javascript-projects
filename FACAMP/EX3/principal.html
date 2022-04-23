@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Aula 3</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='./script.js'></script>
+</head>
+
+<body>
+    <h2>Formulário FACAMP</h2>
+    <form name="form" id="form" action="/action_page.php" method="post">
+        <div>
+            <table>
+                <tr>
+                    <td> RA: </td>
+                    <td><input type="text" name="ra" size="30" id="ra" placeholder="Apenas números"></td>
+                </tr>
+                <tr>
+                    <td> Nome completo: </td>
+                    <td><input type="text" name="nome" size="30" id="nome"></td>
+                </tr>
+                <tr>
+                    <td> Email: </td>
+                    <td><input type="text" name="email" size="30" id="email" placeholder="fulano@gmail.com"></td>
+                </tr>
+                <tr>
+                    <td> Senha: </td>
+                    <td><input type="password" name="senha" size="30" id="senha"></td>
+                </tr>
+            </table>
+            <br><br>
+        </div>
+    </form>
+    <button onclick="Enviar()">Enviar</button>
+    <button onclick="Limpar()">Limpar</button>
+</body>
+
+</html>
