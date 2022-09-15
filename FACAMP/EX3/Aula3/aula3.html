@@ -1,0 +1,45 @@
+<html>
+	<head> 
+		<title>Formulário Alunos FACAMP</title>
+		
+        <script src="./limpar.js"></script>
+
+        <script src="./enviar.js"></script>
+
+		<style type="text/css">
+			body {
+				font-family: Gill Sans MT
+			}
+			.red {
+				font-weight: bold;
+				color: red
+			}
+			.blue {
+				font-weight: bold;
+				color: blue
+			}
+		</style>
+		
+		<h1 class="blue">Formulário - Alunos FACAMP</h1>
+		
+	</head>
+
+    <body>
+        <form form name="formulario" id="formulario" action="/action_page.php">
+            <label class="red" for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" value=""><br><br>
+            <label class="red" for="ra">RA:</label><br>
+            <input type="text" id="ra" name="ra" value=""><br><br>
+            <label class="red" for="email">E-mail:</label><br>
+            <input type="text" id="email" name="email" value=""><br><br>
+            <label class="red" for="senha">Senha:</label><br>
+            <input type="text" id="senha" name="senha" value=""><br><br>
+        </form>
+
+        <button onclick="limpar()">Limpar</button>
+
+        <button onclick="enviar()">Enviar</button>
+
+    </body>
+
+</html>
